@@ -29,6 +29,7 @@ def guessNumber(n, x):
 ~~~
 
 **Explanation**
+
 This function called `guessNumber` takes two parameters: n, which represents the range of numbers from 1 to n, and x, which is the number to be guessed within that range. The function uses a binary search algorithm to efficiently guess the number x within the given range. It initializes count to keep track of the number of guesses made. Then, it sets up two pointers, low and high, representing the lower and upper bounds of the search range, respectively.
 
 Inside a while loop, the algorithm calculates the mid point of the current range. It then checks if mid is equal to x, and if so, it returns the number of guesses made so far. If mid is less than x, it updates the low pointer to mid + 1 to discard the lower half of the range. Otherwise, it updates the high pointer to mid - 1 to discard the upper half of the range. The loop continues until finding the number or not.
